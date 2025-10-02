@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/samaleswari-travels/static/css/main.bc01de42.css",
+    "main.js": "/samaleswari-travels/static/js/main.f8db69c3.js",
+    "static/js/488.6783c966.chunk.js": "/samaleswari-travels/static/js/488.6783c966.chunk.js",
+    "index.html": "/samaleswari-travels/index.html",
+    "main.bc01de42.css.map": "/samaleswari-travels/static/css/main.bc01de42.css.map",
+    "main.f8db69c3.js.map": "/samaleswari-travels/static/js/main.f8db69c3.js.map",
+    "488.6783c966.chunk.js.map": "/samaleswari-travels/static/js/488.6783c966.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc01de42.css",
+    "static/js/main.f8db69c3.js"
+  ]
+}
