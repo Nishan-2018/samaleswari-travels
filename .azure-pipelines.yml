@@ -1,7 +1,7 @@
 trigger:
   branches:
     include:
-      - main         # or the branch you want to track
+      - nissan/travelweb        # or the branch you want to track
 
 pool:
   vmImage: 'ubuntu-latest'
