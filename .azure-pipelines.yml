@@ -1,0 +1,32 @@
+trigger:
+  branches:
+    include:
+      - main         # or the branch you want to track
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  # Step 1: Checkout code from GitHub
+  - task: Checkout@1
+
+  # Step 2: Set up Node.js
+  - task: UseNode@1
+    inputs:
+      version: '18.x'   # Match the Node version you use locally
+
+  # Step 3: Install dependencies
+  - script: npm install
+    displayName: 'Install Dependencies'
+
+  # Step 4: Build the React app
+  - script: npm run build
+    displayName: 'Build React App'
+
+  # Step 5: Deploy to GitHub Pages
+  - script: |
+      npm install -g gh-pages
+      npm run deploy
+    displayName: 'Deploy to GitHub Pages'
+    env:
+      GITHUB_TOKEN: $(GITHUB_TOKEN)
