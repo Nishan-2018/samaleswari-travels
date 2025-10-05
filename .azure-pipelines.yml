@@ -8,7 +8,7 @@ pool:
 
 steps:
   # Step 1: Checkout code from GitHub
-  - task: Checkout@1
+  - checkout: self 
 
   # Step 2: Set up Node.js
   - task: UseNode@1
